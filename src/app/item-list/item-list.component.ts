@@ -5,16 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.scss']
 })
-export class CustomPipesComponent implements OnInit {
+export class ItemListComponent implements OnInit {
   stuff:Array<Object>=[];
   pattern!: string;
 
   constructor() {}
 
-  ngOnInit(): void{}
-
-  addItem(item: any) {
+  addItem(item: string) {
     this.stuff.push({name: item});
   }
- // styles: []
+  ngOnInit(){
+
+  }
 }

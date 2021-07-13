@@ -4,19 +4,24 @@ import { FilterPipe } from './shared/pipesFilter/filter.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { CustomPipesComponent} from './item-list/item-list.component';
+
+import { ItemListComponent } from "./item-list/item-list.component";
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FilterPipe,
-    CustomPipesComponent
+    ItemListComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
 
   ],
   providers: [],
